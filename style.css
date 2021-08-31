@@ -36,8 +36,15 @@ html {
 
 body {
     height: 100vh;
+    position: relative;
 }
 
+h1 {
+    color: var(--black);
+}
+p {
+    color: var(--dark-gray);
+}
 .page-grid-wrapper {
     max-height: 100vh;
     display: grid;
@@ -54,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 .header-container {
     display: flex;
@@ -94,18 +102,71 @@ body {
     transition: all .2s;
 }
 
-
-
-
-
-
-
 .page-grid__item.slider__right {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.text-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 5rem;
+    line-height: 1.5;
+}
+
+.text-area h1 {
+    font-size: 2rem;
+}
+
+.slider-control__btns {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.slider-btn__left,
+.slider-btn__right {
+    background-color: var(--black);
+    flex-basis: 6.25vw;
+    align-self: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.slider-btn__left img,
+.slider-btn__right img {
+    height: 20%;
+}
+
+.slider-btn__left:hover,
+.slider-btn__right:hover {
+    background-color: var(--very-dark-gray);
+    transition: background-color .2s;
+}
+
+.slider-btn__left:not(:hover),
+.slider-btn__right:not(:hover) {
+    background-color: var(--black);
+    transition: background-color .2s;
+}
+.control__btns__only-mobile {
+    align-self: flex-end;
+    width: 12.5vw;
+}
+
+
+
+
+
 .page-grid__item.about__img-left {
     grid-column-start: 1;
     grid-column-end: 3;

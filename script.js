@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const imgArea = document.querySelector('.slider__left.img-area');
     const titleArea = document.querySelector('.text-area h1');
     const descriptionArea = document.querySelector('.text-area p');
-    imgArea.style.background = `url('${sliderItems[2].desktopImg}')`;
+    imgArea.style.background = `url('${sliderItems[0].desktopImg}')`;
     imgArea.style.backgroundSize = 'cover';
     imgArea.style.backgroundPosition = 'center';
 
-    titleArea.innerHTML = sliderItems[2].title;
-    descriptionArea.innerHTML = sliderItems[2].description;
+    titleArea.innerHTML = sliderItems[0].title;
+    descriptionArea.innerHTML = sliderItems[0].description;
 })
