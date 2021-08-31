@@ -8,13 +8,87 @@
   
   <title>Frontend Mentor | Room homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body style="background-color: #444;">
+
+  <div class="page-container">
+
+    <div class="page-container__top slider">
+
+      <main class="slider-wrapper">
+
+        <div class="slider__left img-area">
+
+          <header>
+            <div class="logo-space">
+              <img src="/images/logo.svg" alt="room logo">
+            </div>
+            <nav class="nav-space">
+              <ul class="top-nav">
+                <li class="top-nav__links">
+                  <a href="/">Home</a>
+                </li>
+                <li class="top-nav__links">
+                  <a href="/">Shop</a>
+                </li>
+                <li class="top-nav__links">
+                  <a href="/">About</a>
+                </li>
+                <li class="top-nav__links">
+                  <a href="/">Contact</a>
+                </li>
+              </ul>
+              <div class="mobile-menu-icon">
+                <img src="/images/icon-hamburger.svg"></img>
+              </div>
+            </nav>
+          </header>
+
+          <div class="slider-control__btns">
+            <div class="slider-btn__left">
+              <img src="/images/icon-angle-left.svg" alt="">
+            </div>
+            <div class="slider-btn__right">
+              <img src="/images/icon-angle-right.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+
+        <section class="slider-right text-area">
+          <h1>TESTE</h1>
+          <p>TESTE</p>
+          <div class="cta-btn">
+            <a href="/">shop now <span><img src="/images/icon-arrow.svg" alt=""></span></a>
+          </div>
+        </section>
+      </main>
+
+    </div>
+
+    <div class="page-container__bottom about">
+      <div class="about__img-left"></div>
+      <div class="about__text">
+        <h2>About our furniture</h2>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <div class="about__img-right"></div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
+
+<!--
+
   Home
   Shop
   About
@@ -50,10 +124,4 @@
   Make each room unique, or pick a cohesive theme that best express your interests and what
   inspires you. Find the furniture pieces you need, from traditional to contemporary styles
   or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+-->
