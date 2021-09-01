@@ -67,6 +67,11 @@ p {
     display: flex;
     margin: 4rem 0 0 5rem;
     align-items: center;
+    height: 3rem;
+}
+.logo-space {
+    object-fit: cover;
+
 }
 .nav-space {
     display: flex;
@@ -119,12 +124,39 @@ p {
     justify-content: space-around;
     justify-items: center;
     padding: 5rem;
-    line-height: 1.5;
+    /* line-height: 2; */
 }
 
 .text-area h1 {
     font-size: 2rem;
 }
+.text-area p {
+    line-height: 2;
+}
+
+.cta-btn {
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.cta-btn a {
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.cta-btn a:hover,
+.cta-btn a:hover svg path {
+    fill: var(--dark-gray);
+    color: var(--dark-gray);
+    transition: all .2s;
+} 
+.cta-btn a:not(:hover),
+.cta-btn a:not(:hover) svg path {
+    fill: var(--black);
+    color: var(--black);
+    transition: all .2s;
+}
+
 
 .slider-control__btns {
     display: flex;
@@ -180,9 +212,15 @@ p {
     grid-column-start: 3;
     grid-column-end: 7;
 
-    padding: 4rem;
-    line-height: 1.5;
+    padding: 2rem 3rem;
+    line-height: 2;
     margin: 0 1rem 0 1rem;
+}
+
+.about__text h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 .page-grid__item.about__img-right {
     grid-column-start: 7;
@@ -194,7 +232,11 @@ p {
     background-size: cover;
 }
 
-
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    body {
+        background-color: red;
+    }
+}
 
 
 
