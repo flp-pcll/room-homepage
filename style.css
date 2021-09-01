@@ -179,6 +179,11 @@ p {
     cursor: pointer;
     text-align: center;
     padding: 1.5rem 0 1rem 0;
+    /* display: inline-block; */
+}
+
+.control__btns__only-mobile {
+    display: none;
 }
 
 .slider-btn__left img,
@@ -251,6 +256,16 @@ p {
     }
 }
 
+
+
+
+/*
+Mobile Slider Control needs to be fixed;
+Adjust the media query listener in script.js;
+Adjust Margins and Paddings in Mobile;
+Mobile Header;
+Mobile Menu;
+*/
 @media (max-width: 850px) {
     
     .desktop-only {
@@ -261,44 +276,66 @@ p {
         grid-template-rows: repeat(18, 100px);
     }
 
+    .nav-space {
+        display: none;
+    }
 
     .page-grid__item.slider__left {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 4;
         position: relative;
     }
 
 
-.page-grid__item.slider__right {
-    grid-column-start: 1;
-    grid-row-start: 5;
-    grid-row-end: 8;
+    .page-grid__item.slider__right {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+    .text-area {
+        justify-content: flex-start;
+    }
+
+    .control__btns__only-mobile {
+        display: flex;
+        /* width: 500px; */
+    }
+    .control__btns__only-mobile .slider-btn__left,
+    .control__btns__only-mobile .slider-btn__right {
+    /* background-color: var(--black); */
+    background-color: red;
+    align-self: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    display: inline-block;
+    flex-grow: 1;
 }
 
-.page-grid__item.about__img-left {
-    grid-column-start: 1;
-    grid-row-start: 8;
-    grid-row-end: 12;
-}
+    .page-grid__item.about__img-left {
+        grid-column-start: 1;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
 
-.page-grid__item.about__text {
-    grid-column-start: 1;
-    grid-row-start: 12;
-    grid-row-end: 15;
-    padding: 0;
-}
+    .page-grid__item.about__text {
+        grid-column-start: 1;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        padding: 0;
+    }
 
-.page-grid__item.about__img-right {
-    grid-column-start: 1;
-    grid-row-start: 15;
-    grid-row-end: 19;
-}
+    .page-grid__item.about__img-right {
+        grid-column-start: 1;
+        grid-row-start: 12;
+        grid-row-end: 14;
+    }
 
-.text-area {
-    padding: 0;
-}
+    .text-area {
+        padding: 0;
+    }
 }
 
 
