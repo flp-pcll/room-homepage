@@ -20,15 +20,42 @@ const sliderItems = [
         description: `Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.`
     }
 ]
+let item = 0;
 
+console.log(window.innerWidth); //Need to test the width to change img from desktop to mobile;
 document.addEventListener('DOMContentLoaded', (e) => {
+    loadSliderItem(item);
+})
+
+const sliderControlLeft = document.querySelectorAll('[slider-ctrl="left"]');
+sliderControlLeft.forEach(btn => {
+    btn.addEventListener('click', sliderReverse);
+})
+
+const sliderControlRight = document.querySelectorAll('[slider-ctrl="right"]');
+sliderControlRight.forEach(btn => {
+    btn.addEventListener('click', sliderForward);
+})
+
+function sliderForward() {
+    item == sliderItems.length-1 ? item = 0 : item++;
+    loadSliderItem(item);
+}
+
+function sliderReverse() {
+    item == 0 ? item = sliderItems.length-1 : item--;
+    loadSliderItem(item);
+}
+
+function loadSliderItem(i) {
     const imgArea = document.querySelector('.slider__left.img-area');
     const titleArea = document.querySelector('.text-area h1');
     const descriptionArea = document.querySelector('.text-area p');
-    imgArea.style.background = `url('${sliderItems[0].desktopImg}')`;
+
+    imgArea.style.background = `url('${sliderItems[i].desktopImg}')`;
     imgArea.style.backgroundSize = 'cover';
     imgArea.style.backgroundPosition = 'center';
 
-    titleArea.innerHTML = sliderItems[0].title;
-    descriptionArea.innerHTML = sliderItems[0].description;
-})
+    titleArea.innerHTML = sliderItems[i].title;
+    descriptionArea.innerHTML = sliderItems[i].description;
+}

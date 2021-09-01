@@ -44,7 +44,7 @@
               <a href="/">Contact</a>
             </li>
           </ul>
-          <div class="mobile-menu-icon" style="cursor: pointer;">
+          <div class="mobile-menu-icon only-mobile" style="cursor: pointer;">
             <svg width="20" 
             height="14" 
             xmlns="http://www.w3.org/2000/svg">
@@ -56,8 +56,8 @@
         </nav>
       </header>
 
-      <div class="slider-control__btns control__btns__only-mobile" style="display: none;">
-        <div class="slider-btn__left">
+      <div class="slider-control__btns control__btns__only-mobile">
+        <div class="slider-btn__left" slider-ctrl="left">
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,7 @@
             fill-rule="evenodd"/>
           </svg>
         </div>
-        <div class="slider-btn__right">
+        <div class="slider-btn__right" slider-ctrl="right">
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="slider-control__btns">
-        <div class="slider-btn__left">
+        <div class="slider-btn__left" slider-ctrl="left"> <!--On click: slider reverse-->
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +108,7 @@
             fill-rule="evenodd"/>
           </svg>
         </div>
-        <div class="slider-btn__right">
+        <div class="slider-btn__right" slider-ctrl="right"> <!--On click: slider forward-->
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">

@@ -195,15 +195,11 @@ p {
     width: 12.5vw;
 }
 
-
-
-
-
 .page-grid__item.about__img-left {
     grid-column-start: 1;
     grid-column-end: 3;
     object-fit: cover;
-    background-image: url(/images/image-about-dark.jpg);
+    background-image: url(images/image-about-dark.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,15 +222,25 @@ p {
     grid-column-start: 7;
     grid-column-end: 9;
     object-fit: cover;
-    background-image: url(/images/image-about-light.jpg);
+    background-image: url(images/image-about-light.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-@media screen and (max-width: 1000px) and (orientation: landscape) {
-    body {
-        background-color: red;
+
+/*872*/ /*810: ja entra o mobile*/
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+    
+    .text-area {
+        padding: 2.5rem;
+    }
+
+    .page-grid__item.about__text {
+        padding: 0 2rem;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
     }
 }
 
