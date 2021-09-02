@@ -146,13 +146,13 @@ p {
 }
 
 .cta-btn {
-    cursor: pointer;
     vertical-align: bottom;
 }
 .cta-btn a {
     color: var(--black);
     text-transform: uppercase;
     letter-spacing: .5rem;
+    cursor: pointer;
 }
 
 .cta-btn a:hover,
@@ -276,6 +276,8 @@ p {
     .logo-space {
         align-self: center;
         flex-grow: 2;
+        justify-self: center;
+        text-align: center;
     }
     .logo-space svg {
         vertical-align: bottom;
@@ -295,6 +297,10 @@ p {
         background-color: var(--white);
         z-index: 3000;
         transition: top .2s ease-in-out;
+    }
+    .top-nav {
+        position: absolute;
+        top: 50%;
     }
     .top-nav__links {
         cursor: pointer;
@@ -322,7 +328,7 @@ p {
     }
     .mobile-menu-icon.only-mobile {
         display: inline-block;
-        flex-grow: 2;
+        flex-grow: 0;
         fill: black;
         z-index: 4000;
     }
@@ -334,6 +340,7 @@ p {
     }
     .mobile-menu-icon.only-mobile svg.close {
         cursor: pointer;
+        position: fixed;
     }
     .toggle-icon__inactive {
         display: none;
@@ -424,6 +431,9 @@ p {
         padding: 2rem;
         align-self: center;
         font-size: 1.1rem;
+    }
+    .about__text h2 {
+        font-size: 1rem;
     }
     .about__text p {
         margin: 1rem 0 0 0;
