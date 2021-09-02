@@ -260,9 +260,7 @@ p {
 
 
 /*
-Mobile Slider Control needs to be fixed;
 Adjust the media query listener in script.js;
-Adjust Margins and Paddings in Mobile;
 Mobile Header;
 Mobile Menu;
 */
@@ -273,7 +271,7 @@ Mobile Menu;
     }
     .page-grid-wrapper {
         grid-template-columns: 100vw;
-        grid-template-rows: repeat(18, 100px);
+        grid-template-rows: repeat(21, 12vh);
     }
 
     .nav-space {
@@ -284,59 +282,61 @@ Mobile Menu;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 6;
         position: relative;
     }
 
 
     .page-grid__item.slider__right {
         grid-column-start: 1;
-        grid-row-start: 4;
-        grid-row-end: 8;
+        grid-row-start: 6;
+        grid-row-end: 11;
+        padding: 2rem 3rem;
     }
     .text-area {
-        justify-content: flex-start;
+        justify-content: space-around;
+        padding: 0;
     }
 
     .control__btns__only-mobile {
         display: flex;
-        /* width: 500px; */
+        align-self: flex-end;
+        width: 50%;
     }
     .control__btns__only-mobile .slider-btn__left,
     .control__btns__only-mobile .slider-btn__right {
-    /* background-color: var(--black); */
-    background-color: red;
-    align-self: center;
+    background-color: var(--black);
+    align-self: flex-end;
     cursor: pointer;
     text-align: center;
     padding: 1.5rem 0 1rem 0;
-    display: inline-block;
-    flex-grow: 1;
+    display: block;
+    flex-basis: 50%;
 }
 
     .page-grid__item.about__img-left {
         grid-column-start: 1;
-        grid-row-start: 8;
-        grid-row-end: 10;
+        grid-row-start: 11;
+        grid-row-end: 14;
     }
 
     .page-grid__item.about__text {
         grid-column-start: 1;
-        grid-row-start: 10;
-        grid-row-end: 12;
-        padding: 0;
+        grid-row-start: 14;
+        grid-row-end: 18;
+        padding: 2rem 2rem;
+    }
+    .about__text p {
+        margin-top: 1rem;
     }
 
     .page-grid__item.about__img-right {
         grid-column-start: 1;
-        grid-row-start: 12;
-        grid-row-end: 14;
-    }
-
-    .text-area {
-        padding: 0;
+        grid-row-start: 18;
+        grid-row-end: 21;
     }
 }
+
 
 
 
