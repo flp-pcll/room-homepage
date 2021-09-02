@@ -88,13 +88,24 @@ function toggleMobileMenu(e) {
 }
 
 function changeMenuIcon(target, iconList) {
-    if(target == iconList[0]) {
-        iconList[0].style.display = 'none';
-        iconList[1].style.display = 'block';
+    for(let i in iconList) {
+        console.log(iconList[i]);
+    }
+
+    if (target === iconList[0]) {
+        console.log('clicou no hamburger');
+        iconList[0].classList.toggle('toggle-icon__inactive');
+        iconList[1].classList.toggle('toggle-icon__active');
     } else {
-        iconList[0].style.display = 'block';
-        iconList[1].style.display = 'none';
+        console.log('clicou no close');
+        iconList[0].classList.toggle('toggle-icon__inactive');
+        iconList[1].classList.toggle('toggle-icon__active');
+
         toggleMobileMenu;
     }
+
+
+    console.log(target, 'target');
 }
+
 
