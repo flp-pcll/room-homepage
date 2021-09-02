@@ -66,3 +66,35 @@ function loadSliderItem(i) {
     titleArea.innerHTML = sliderItems[i].title;
     descriptionArea.innerHTML = sliderItems[i].description;
 }
+
+
+
+//Mobile menu:
+const mobileBtn = document.querySelectorAll('.mobile-menu-icon.only-mobile svg');
+mobileBtn.forEach(btn => {
+    btn.addEventListener('click', toggleMobileMenu);
+})
+
+
+
+function toggleMobileMenu(e) {
+    const mobileMenu = document.querySelector('.nav-space');
+    mobileMenu.classList.toggle('mobile-menu__active');
+
+    document.querySelector('.page-grid-wrapper').classList.toggle('page-grid__menu-active');
+
+    changeMenuIcon(e.target, mobileBtn);
+
+}
+
+function changeMenuIcon(target, iconList) {
+    if(target == iconList[0]) {
+        iconList[0].style.display = 'none';
+        iconList[1].style.display = 'block';
+    } else {
+        iconList[0].style.display = 'block';
+        iconList[1].style.display = 'none';
+        toggleMobileMenu;
+    }
+}
+
