@@ -21,7 +21,7 @@ const sliderItems = [
     }
 ]
 let item = 0;
-let mobileSize = window.matchMedia('(max-width: 850px)'); //This variable will be used to test the media query to load the correct img file;
+let mobileSize = window.matchMedia('(max-width: 600px)'); //This variable will be used to test the media query to load the correct img file;
 
 console.log(window.innerWidth); //Need to test the width to change img from desktop to mobile;
 document.addEventListener('DOMContentLoaded', (e) => {
