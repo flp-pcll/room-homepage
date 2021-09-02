@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -20,11 +20,12 @@
     <div class="page-grid__item slider__left img-area">
 
       <header class="header-container">
-        <div class="mobile-menu-icon only-mobile">
+        <div class="mobile-menu-icon only-mobile" role="button">
           <svg class="hamburger toggle-icon__active" 
           width="20" 
           height="14" 
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg" 
+          aria-label="mobile menu icon">
             <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" 
             fill="#FFF" 
             fill-rule="evenodd"/>
@@ -32,14 +33,15 @@
           <svg class="close toggle-icon__inactive"
           width="16" 
           height="16" 
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="close mobile menu">
             <path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" 
             fill="#000" 
             fill-rule="evenodd" 
             opacity=".201"/>
           </svg>
         </div>
-        <div class="logo-space">
+        <div class="logo-space" aria-label="Room Logo">
           <svg width="62" 
                height="14" 
                xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +69,7 @@
       </header>
 
       <div class="slider-control__btns control__btns__only-mobile">
-        <div class="slider-btn__left" slider-ctrl="left">
+        <div class="slider-btn__left" slider-ctrl="left" aria-label="slider control left" role="button">
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +79,7 @@
             fill-rule="evenodd"/>
           </svg>
         </div>
-        <div class="slider-btn__right" slider-ctrl="right">
+        <div class="slider-btn__right" slider-ctrl="right" aria-label="slider control right" role="button">
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +97,7 @@
       <div class="text-area">
         <h1>TESTE</h1>
         <p>TESTE</p>
-        <div class="cta-btn">
+        <div class="cta-btn" aria-label="shop now button" role="button">
           <a href="/">shop now
             <svg width="40" 
             height="12" 
@@ -107,8 +109,8 @@
           </a>
         </div>
       </div>
-      <div class="slider-control__btns desktop-only">
-        <div class="slider-btn__left" slider-ctrl="left"> <!--On click: slider reverse-->
+      <div class="slider-control__btns desktop-only" >
+        <div class="slider-btn__left" slider-ctrl="left" aria-label="slider control left" role="button"> <!--On click: slider reverse-->
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +120,7 @@
             fill-rule="evenodd"/>
           </svg>
         </div>
-        <div class="slider-btn__right" slider-ctrl="right"> <!--On click: slider forward-->
+        <div class="slider-btn__right" slider-ctrl="right" aria-label="slider ontrol right" role="button"> <!--On click: slider forward-->
           <svg width="14" 
           height="24" 
           xmlns="http://www.w3.org/2000/svg">
@@ -156,41 +158,3 @@
 </body>
 </html>
 
-<!--
-
-  Home
-  Shop
-  About
-  Contact
-
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
--->
