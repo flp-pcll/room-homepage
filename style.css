@@ -80,7 +80,9 @@ p {
 }
 .logo-space {
     object-fit: cover;
-
+}
+.logo-space svg {
+    vertical-align: baseline;
 }
 .nav-space {
     display: flex;
@@ -274,7 +276,9 @@ p {
     .logo-space {
         align-self: center;
         flex-grow: 2;
-
+    }
+    .logo-space svg {
+        vertical-align: bottom;
     }
     .nav-space {
         display: flex;

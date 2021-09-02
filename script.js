@@ -80,32 +80,20 @@ mobileBtn.forEach(btn => {
 function toggleMobileMenu(e) {
     const mobileMenu = document.querySelector('.nav-space');
     mobileMenu.classList.toggle('mobile-menu__active');
-
     document.querySelector('.page-grid-wrapper').classList.toggle('page-grid__menu-active');
-
     changeMenuIcon(e.target, mobileBtn);
-
 }
 
 function changeMenuIcon(target, iconList) {
-    for(let i in iconList) {
-        console.log(iconList[i]);
-    }
-
     if (target === iconList[0]) {
-        console.log('clicou no hamburger');
         iconList[0].classList.toggle('toggle-icon__inactive');
         iconList[1].classList.toggle('toggle-icon__active');
     } else {
-        console.log('clicou no close');
         iconList[0].classList.toggle('toggle-icon__inactive');
         iconList[1].classList.toggle('toggle-icon__active');
 
         toggleMobileMenu;
     }
-
-
-    console.log(target, 'target');
 }
 
 
